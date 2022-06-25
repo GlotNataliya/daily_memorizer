@@ -1,0 +1,9 @@
+<div id="<%= dom_id topic %>" class="topic-content">
+  <%= image_tag "topic/list_#{rand(6)}.svg" %>
+  <%= link_to topic_url(topic), class: 'topic-image' do %>
+    <div class="topic">
+      <h3 class="topic-name"><%= topic.title.upcase %></h3>
+      <span class="topic-time"><%= topic.created_at.strftime('%Y') %></span>
+    </div>
+  <% end %>
+</div>

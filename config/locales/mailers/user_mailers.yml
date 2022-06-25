@@ -1,0 +1,6 @@
+en:
+  user_mailer:
+    notify_user:
+      subject: "Welcome to Daily memorizer!"
+      greeting: "Hello, %{user}"
+      content: "Thanks for joining and have a great day!"

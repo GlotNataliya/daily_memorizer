@@ -1,0 +1,10 @@
+.greeting
+  = t('.greeting', user: @user.first_name)
+
+.content
+  = t('.content')
+
+.actions
+  = link_to('Your topics', topics_url, class: :btn)
+
+= image_tag attachments['for_kitchen.jpg'].url, alt: 'Our Photo', class: 'photo', width: 300

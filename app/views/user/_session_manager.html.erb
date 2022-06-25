@@ -1,0 +1,8 @@
+<% if current_user.present?  %>
+  <%= render "shared/header" %>
+<% else %>
+	<nav class="navbar justify-content-end bg-nav">
+    <%= link_to "Sign in", new_user_session_path, class: "btn me-2 btn-nav" %>
+    <%= link_to "Sign up", new_user_registration_path, class: "btn me-4 btn-nav" %>
+	</nav>
+<% end %>

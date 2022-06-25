@@ -1,0 +1,7 @@
+<%= turbo_stream.append "topics" do %>
+  <%= render "topic", topic: @topic %>
+<% end %>
+
+<%= turbo_stream.replace "#{dom_id(Topic.new)}_form" do %>
+  <%= render "form", topic: Topic.new %>
+<% end %>

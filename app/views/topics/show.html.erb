@@ -1,0 +1,11 @@
+<h2 class="topic-image__title">
+  <%= @topic.title.titleize %>
+</h2>
+
+
+<div>
+  <%= link_to "Edit this topic", edit_topic_path(@topic) %> |
+  <%= link_to "Back to topics", topics_path %>
+
+  <%= button_to "Destroy this topic", @topic, method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>
